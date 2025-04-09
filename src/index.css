@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your global CSS file */
+.slick-dots li button:before {
+  color: #6b7280 !important; /* gray-500 */
+}
+.slick-dots li.slick-active button:before {
+  color: #ffffff !important; /* white */
+}
+@layer utilities {
+  .hide-scrollbar-arrows::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thumb-rounded {
+    &::-webkit-scrollbar-thumb {
+      border-radius: 9999px;
+    }
+  }
+}
+@layer utilities {
+  .scrollbar-w-12::-webkit-scrollbar {
+    width: 12px;
+  }
+}
+@font-face {
+  font-family: "MonaSans-Medium";
+  src: url("./assets/fonts/MonaSans-Medium.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MonaSans-Regular";
+  src: url("./assets/fonts/MonaSans-Regular.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "MonaSans-Bold";
+  src: url("./assets/fonts/MonaSans-Bold.ttf");
+  font-display: swap;
+}
+
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #121212;
+  border-radius: 5px;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5d5d5d;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 !important;
+  padding: 0;
+  cursor: pointer;
+}
