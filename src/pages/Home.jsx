@@ -1,63 +1,32 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { ThreeDMarqueeDemo } from "../helper/marque";
-import { second, third } from "../helper/images";
-import First from "../components/Home/First";
+import Testimonials from "../components/Home/Testimonials";
+import CallToAction from "../components/Home/CallToAction";
+import Hero from "../components/Home/Hero";
+import SkillMatter from "../components/Home/SkillMatter";
+import Works from "../components/Home/Works";
+import Categories from "../components/Home/Categories";
 
 const Home = () => {
   return (
-    <div className="bg-black text-white ">
+    <div className="bg-Background text-white">
       <Navbar />
+      <Hero />
+      <SkillMatter />
+      <Works />
+      <Categories />
+      <Testimonials />
 
-      <First />
+      <div className="bg-Background py-16">
+        <h2 className="text-3xl font-bold text-center text-gray-300 mb-8">
+          A Glimpse into LifeSkillify
+        </h2>
+        <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-Background via-white to-Background animate-gradient" />
+        <ThreeDMarqueeDemo />
+      </div>
 
-      {/* Section 2 */}
-      <section className="min-h-screen flex flex-col md:flex-row-reverse items-center justify-center gap-12 px-6">
-        <img src={second} alt="Purpose" className="w-full md:w-1/2" />
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-amber">
-            What is LifeSkillify?
-          </h2>
-          <p className="text-lg text-grayMid">
-            LifeSkillify delivers daily micro-lessons to help you grow
-            personally and professionally. Learn, improve, and build better
-            habits without overwhelming your day.
-          </p>
-        </div>
-      </section>
-
-      {/* Section 3 */}
-      <section className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-12 px-6">
-        <img src={third} alt="Benefits" className="w-full md:w-1/2" />
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-accent">
-            Built for Busy Lives
-          </h2>
-          <p className="text-lg text-grayMid">
-            Whether you're a student or a working professional, our bite-sized
-            lessons make it easy to stay consistent and develop crucial soft &
-            real-life skills.
-          </p>
-        </div>
-      </section>
-
-      {/* Section 4 */}
-      <section className="min-h-screen flex flex-col md:flex-row-reverse items-center justify-center gap-12 px-6">
-        <img src="/vector4.svg" alt="Growth" className="w-full md:w-1/2" />
-        <div>
-          <h2 className="text-3xl font-bold mb-4 text-info">
-            Daily Wins, Real Results
-          </h2>
-          <p className="text-lg text-grayMid">
-            With LifeSkillify, you gain confidence, clarity, and capability—one
-            lesson at a time. Join the movement of learners growing smarter,
-            calmer, and stronger every day.
-          </p>
-        </div>
-      </section>
-
-      <ThreeDMarqueeDemo />
-
+      <CallToAction />
       <Footer />
     </div>
   );

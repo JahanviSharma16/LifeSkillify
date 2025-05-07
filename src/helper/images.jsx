@@ -1,3 +1,11 @@
 export { default as first } from "../assets/images/first.jpg";
 export { default as second } from "../assets/images/second.jpg";
 export { default as third } from "../assets/images/third.jpg";
+export { default as mr1 } from "../assets/images/marque/1.png";
+export { default as mr2 } from "../assets/images/marque/2.png";
+export { default as mr3 } from "../assets/images/marque/3.png";
+export { default as mr4 } from "../assets/images/marque/4.png";
+export { default as mr5 } from "../assets/images/marque/5.png";
+export { default as mr6 } from "../assets/images/marque/6.png";
+export { default as mr7 } from "../assets/images/marque/7.png";
+export { default as grow } from "../assets/images/growth.jpg";
