@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 
 const TodaySkill = () => {
   return (
-    <div className="bg-Background text-white">
+    <div className="bg-Background text-primary">
       <Navbar />
-      <section className="bg-Background text-white h-full">
+      <section className="bg-Background text-primary h-full">
         <TodaysSkillCard />
         {/* <ProgressTracker /> */}
       </section>

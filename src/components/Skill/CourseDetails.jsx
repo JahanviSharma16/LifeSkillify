@@ -7,7 +7,9 @@ const CourseDetails = () => {
   const course = courses.find((c) => c.id === parseInt(id));
 
   if (!course) {
-    return <div className="text-white text-center py-10">Course not found.</div>;
+    return (
+      <div className="text-white text-center py-10">Course not found.</div>
+    );
   }
 
   return (
@@ -16,26 +18,39 @@ const CourseDetails = () => {
         <Link to="/" className="text-primary underline mb-6 inline-block">
           ← Back to Courses
         </Link>
+
         <img
           src={course.image}
           alt={course.title}
           className="w-full h-64 object-cover rounded-lg shadow-lg"
         />
+
         <h1 className="text-3xl font-bold mt-6">{course.title}</h1>
         <p className="text-gray-300 mt-2">{course.details.intro}</p>
-        <div className="mt-6">
-          <h2 className="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+
+        <section className="mt-6">
+          <h2 className="text-2xl font-semibold mb-4">
+            Frequently Asked Questions
+          </h2>
           <div className="space-y-4">
             {course.details.questions.map((qna, index) => (
-              <div key={index} className="bg-darkshade p-4 rounded-lg">
-                <h3 className="font-semibold text-lg text-primary">
+              <article
+                key={index}
+                className="bg-darkshade p-4 rounded-lg"
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
+              >
+                <h3
+                  id={`faq-question-${index}`}
+                  className="font-semibold text-lg text-primary"
+                >
                   Q: {qna.question}
                 </h3>
                 <p className="text-gray-300 mt-1">A: {qna.answer}</p>
-              </div>
+              </article>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -32,65 +32,74 @@ const TodaysSkillCard = () => {
   };
 
   return (
-    <div className="bg-Background text-white pt-32 px-4 md:px-10 lg:px-20 pb-10 shadow-lg min-h-screen">
+    <div className="bg-Background text-white pt-32 px-4 md:px-10 lg:px-20 pb-10 shadow-lg min-h-screen flex flex-col items-center justify-center">
       {!started ? (
-        <div className="flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center max-w-xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-primary">
             Ready to grow today?
           </h2>
-          <p className="text-gray-700 mb-6 text-base md:text-lg max-w-xl">
-            Click the button below to start your micro-lesson and build your daily life skills. Stay consistent and track your progress!
+          <p className="text-gray-700 mb-6 text-base md:text-lg">
+            Click the button below to start your micro-lesson and build your
+            daily life skills. Stay consistent and track your progress!
           </p>
           <button
             onClick={handleStart}
-            className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300"
+            className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50"
           >
             Start Today’s Skill
           </button>
         </div>
       ) : (
-        <div className="flex flex-col items-center justify-center w-full">
-          <div className="w-full md:w-[70%] mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2 text-primary">{currentSkill.title}</h2>
-            <p className="mb-4 text-grayDark text-sm md:text-base">{currentSkill.description}</p>
+        <div className="flex flex-col items-center justify-center w-full max-w-4xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold mb-2 text-primary text-center">
+            {currentSkill.title}
+          </h2>
+          <p className="mb-4 text-grayDark text-sm md:text-base text-center">
+            {currentSkill.description}
+          </p>
 
-            <div className="relative mb-6 w-full h-56 md:h-72 lg:h-96">
-              <img
-                src={currentSkill.images[imgIndex]}
-                alt={`Skill step ${imgIndex + 1}`}
-                className="w-full h-full object-cover rounded"
-              />
-              <button
-                onClick={prevImage}
-                className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 rounded-full px-3 py-1 shadow"
-              >
-                ◀
-              </button>
-              <button
-                onClick={nextImage}
-                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 rounded-full px-3 py-1 shadow"
-              >
-                ▶
-              </button>
-            </div>
-
-            {currentSkill.content?.map((section, index) => (
-              <div key={index} className="mb-6 text-left">
-                <h3 className="text-lg md:text-xl font-semibold text-accent mb-2">{section.heading}</h3>
-                <ul className="list-disc list-inside text-gray-700 text-sm md:text-base">
-                  {section.points.map((point, i) => (
-                    <li key={i}>{point}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="relative mb-6 w-full h-56 md:h-72 lg:h-96 rounded overflow-hidden shadow-lg">
+            <img
+              src={currentSkill.images[imgIndex]}
+              alt={`Skill step ${imgIndex + 1}`}
+              className="w-full h-full object-cover rounded"
+            />
+            <button
+              onClick={prevImage}
+              aria-label="Previous image"
+              className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-800 rounded-full px-3 py-1 shadow hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              ◀
+            </button>
+            <button
+              onClick={nextImage}
+              aria-label="Next image"
+              className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-800 rounded-full px-3 py-1 shadow hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              ▶
+            </button>
           </div>
 
-          <div className="mt-8 text-center">
-            <p className="mb-2 font-medium text-base md:text-lg">Want to learn more today?</p>
+          {currentSkill.content?.map((section, index) => (
+            <div key={index} className="mb-6 text-left w-full">
+              <h3 className="text-lg md:text-xl font-semibold text-accent mb-2">
+                {section.heading}
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 text-sm md:text-base">
+                {section.points.map((point, i) => (
+                  <li key={i}>{point}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+
+          <div className="mt-8 text-center w-full">
+            <p className="mb-2 font-medium text-base md:text-lg">
+              Want to learn more today?
+            </p>
             <button
               onClick={showAnotherSkill}
-              className="bg-amber text-white px-4 py-2 rounded hover:bg-yellow-600 transition duration-300"
+              className="bg-amber text-white px-4 py-2 rounded hover:bg-yellow-600 transition duration-300 focus:outline-none focus:ring-2 focus:ring-amber-400"
             >
               Show Me Another Skill
             </button>

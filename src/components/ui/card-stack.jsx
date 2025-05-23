@@ -30,22 +30,20 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute bg-Background  p-10 rounded-3xl shadow-xl border border-white/[0.1]   shadow-primary/[0.05] flex flex-col justify-between"
+            className="absolute bg-[#F9FAFB] p-6 rounded-3xl shadow-md border border-[#E5E7EB] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
             animate={{
               top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
-              zIndex: cards.length - index, //  decrease z-index for the cards that are behind
+              scale: 1 - index * SCALE_FACTOR,
+              zIndex: cards.length - index,
             }}
           >
-            <div className="font-normal text-neutral-200">{card.content}</div>
+            <div className="font-normal text-[#6B7280]">{card.content}</div>
             <div>
-              <p className="font-medium text-white">{card.name}</p>
-              <p className=" font-normal text-neutral-200">
-                {card.designation}
-              </p>
+              <p className="font-medium text-[#111827]">{card.name}</p>
+              <p className="font-normal text-[#6B7280]">{card.designation}</p>
             </div>
           </motion.div>
         );

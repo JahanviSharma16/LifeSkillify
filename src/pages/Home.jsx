@@ -18,11 +18,11 @@ const Home = () => {
       <Categories />
       <Testimonials />
 
-      <div className="bg-Background py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-300 mb-8">
+      <div className="bg-[#F9FAFB] py-16">
+        <h2 className="text-3xl font-bold text-center text-[#111827] mb-8">
           A Glimpse into LifeSkillify
         </h2>
-        <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-Background via-white to-Background animate-gradient" />
+        <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-[#F9FAFB] via-[#3B82F6] to-[#F9FAFB] animate-gradient" />
         <ThreeDMarqueeDemo />
       </div>
 

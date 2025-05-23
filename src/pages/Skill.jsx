@@ -6,7 +6,7 @@ import SkillCategories from "../components/Skill/SkillCategories";
 
 const Skill = () => {
   return (
-    <div className="bg-Background text-white">
+    <div className="bg-Background text-primary">
       <Navbar />
       <SkillHero />
       <SkillCategories />
