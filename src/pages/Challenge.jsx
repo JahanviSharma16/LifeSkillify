@@ -1,13 +1,14 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ChallengeHero from "../components/Challenge/ChallengeHero";
+import ChallengeGrid from "../components/Challenge/ChallengeGrid";
 
 const Challenge = () => {
   return (
-    <div className="bg-Background text-white min-h-screen flex flex-col">
+    <div className="bg-Background text-text min-h-screen">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center px-6 py-20">
-        <h1 className="text-4xl font-bold text-primary">Challenge</h1>
-      </main>
+      <ChallengeHero />
+      <ChallengeGrid />
       <Footer />
     </div>
   );

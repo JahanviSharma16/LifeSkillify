@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "LifeSkillify Community",
+    "description": "Connect with fellow learners, share your growth journey, and get inspired by real stories of transformation."
+  },
+  "stats": {
+    "members": 12450,
+    "discussions": 3842,
+    "skillsShared": 15670,
+    "countries": 42
+  },
+  "featuredMembers": [
+    {
+      "id": 1,
+      "name": "Ananya M.",
+      "role": "Student",
+      "streak": 21,
+      "skillsCompleted": 18,
+      "avatar": "AM",
+      "bio": "Building better habits one lesson at a time. Love the communication skills track!"
+    },
+    {
+      "id": 2,
+      "name": "Rohan S.",
+      "role": "Marketing Executive",
+      "streak": 14,
+      "skillsCompleted": 32,
+      "avatar": "RS",
+      "bio": "Productivity nerd. Time blocking changed my work life completely."
+    },
+    {
+      "id": 3,
+      "name": "Priya K.",
+      "role": "Freelancer",
+      "streak": 30,
+      "skillsCompleted": 45,
+      "avatar": "PK",
+      "bio": "30-day streak champion! Mental wellness lessons are my favorite."
+    },
+    {
+      "id": 4,
+      "name": "Arjun T.",
+      "role": "Software Engineer",
+      "streak": 12,
+      "skillsCompleted": 27,
+      "avatar": "AT",
+      "bio": "Finally understanding personal finance. The budgeting challenge was a game-changer."
+    }
+  ],
+  "discussions": [
+    {
+      "id": 1,
+      "author": "Ananya M.",
+      "avatar": "AM",
+      "category": "Communication",
+      "title": "Active listening completely changed my relationship with my roommate",
+      "excerpt": "I tried the paraphrasing technique from today's lesson and my roommate actually said 'wow, you really get me.' Small change, huge impact.",
+      "likes": 47,
+      "replies": 12,
+      "timeAgo": "2 hours ago",
+      "tags": ["active-listening", "relationships"]
+    },
+    {
+      "id": 2,
+      "author": "Rohan S.",
+      "avatar": "RS",
+      "category": "Productivity",
+      "title": "Completed the No-Phone Morning challenge — here's what I learned",
+      "excerpt": "Day 3 was the hardest. But by day 5, I was getting more done before 9 AM than I used to all morning. Highly recommend.",
+      "likes": 89,
+      "replies": 23,
+      "timeAgo": "5 hours ago",
+      "tags": ["challenge", "productivity", "morning-routine"]
+    },
+    {
+      "id": 3,
+      "author": "Priya K.",
+      "avatar": "PK",
+      "category": "Mental Wellness",
+      "title": "The RAIN technique saved me during a stressful client call",
+      "excerpt": "I felt panic rising mid-call. Did a quick RAIN check-in (recognized, allowed, investigated, nurtured) and was able to respond calmly.",
+      "likes": 63,
+      "replies": 18,
+      "timeAgo": "8 hours ago",
+      "tags": ["mindfulness", "stress", "RAIN"]
+    },
+    {
+      "id": 4,
+      "author": "Arjun T.",
+      "avatar": "AT",
+      "category": "Personal Finance",
+      "title": "Budget Awareness Week results: I was spending 40% on food delivery",
+      "excerpt": "Tracking expenses for 7 days was eye-opening. Didn't realize how much I was spending on convenience. Already meal-prepping now.",
+      "likes": 112,
+      "replies": 31,
+      "timeAgo": "1 day ago",
+      "tags": ["budgeting", "finance", "challenge"]
+    },
+    {
+      "id": 5,
+      "author": "Meera D.",
+      "avatar": "MD",
+      "category": "Self-Awareness",
+      "title": "How I finally learned to say no without guilt",
+      "excerpt": "The boundaries lesson + community support helped me decline a project that would have burned me out. Self-care isn't selfish.",
+      "likes": 76,
+      "replies": 15,
+      "timeAgo": "1 day ago",
+      "tags": ["boundaries", "self-care"]
+    },
+    {
+      "id": 6,
+      "author": "Vikram P.",
+      "avatar": "VP",
+      "category": "Critical Thinking",
+      "title": "Think Like a Pro course — best decision I made this month",
+      "excerpt": "The decision-making frameworks are practical and immediately applicable. Used the pros/cons matrix at work yesterday.",
+      "likes": 54,
+      "replies": 9,
+      "timeAgo": "2 days ago",
+      "tags": ["critical-thinking", "course-review"]
+    }
+  ],
+  "trendingTopics": [
+    { "name": "Morning Routines", "posts": 234 },
+    { "name": "Financial Literacy", "posts": 189 },
+    { "name": "Active Listening", "posts": 156 },
+    { "name": "Habit Building", "posts": 312 },
+    { "name": "Work-Life Balance", "posts": 198 }
+  ]
+}

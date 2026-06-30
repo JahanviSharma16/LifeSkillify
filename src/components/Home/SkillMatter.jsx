@@ -1,37 +1,36 @@
+import homeData from "../../data/home.json";
+
 const SkillMatter = () => {
+  const { whyItMatters } = homeData;
+
   return (
-    <section className="px-4 md:px-12 lg:px-32 py-20 min-h-screen bg-[#F9FAFB] text-[#111827]">
-      <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-extrabold mb-6 text-[#111827]">
-          Why Life Skills Matter
-        </h2>
+    <section id="about" className="px-4 md:px-12 lg:px-32 py-24 md:py-32 bg-surface">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
+        <div className="lg:sticky lg:top-32">
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4 block">
+            {whyItMatters.eyebrow}
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-text leading-tight mb-6">
+            {whyItMatters.title}
+          </h2>
+          <p className="text-lg text-grayMid leading-relaxed">
+            {whyItMatters.description}
+          </p>
+        </div>
 
-        {/* Animated Gradient Line */}
-        <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-[#F9FAFB] via-[#3B82F6] to-[#F9FAFB] animate-gradient" />
-
-        <p className="text-[#6B7280] text-lg md:text-xl leading-relaxed mb-12 px-4">
-          In today’s fast-paced world, academic knowledge alone isn’t enough.
-          Life skills like emotional intelligence, communication, resilience,
-          and personal finance are the real tools that empower you to lead a
-          balanced, successful, and fulfilling life.
-        </p>
-
-        {/* Skill Icons Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
-          {[
-            { title: "Communication", icon: "🗣️" },
-            { title: "Emotional Intelligence", icon: "🧠" },
-            { title: "Personal Finance", icon: "💰" },
-            { title: "Productivity", icon: "📈" },
-          ].map((skill, idx) => (
+        <div className="space-y-0">
+          {whyItMatters.points.map((point, idx) => (
             <div
               key={idx}
-              className="bg-[#EFF6FF] border border-[#E5E7EB] rounded-xl p-6 flex flex-col items-center shadow-sm hover:scale-105 transition-transform duration-300"
+              className="group flex gap-6 py-8 border-b border-grayLight last:border-0 hover:pl-2 transition-all duration-300"
             >
-              <span className="text-4xl mb-3">{skill.icon}</span>
-              <p className="text-lg font-semibold text-[#111827]">
-                {skill.title}
-              </p>
+              <div className="flex-shrink-0 w-14 h-14 rounded-2xl bg-accentLight border border-accent/10 flex items-center justify-center text-2xl group-hover:border-accent/30 transition-colors">
+                {point.icon}
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-text mb-2">{point.title}</h3>
+                <p className="text-grayMid leading-relaxed">{point.description}</p>
+              </div>
             </div>
           ))}
         </div>

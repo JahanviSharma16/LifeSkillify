@@ -11,14 +11,14 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
 
   useEffect(() => {
     startFlipping();
-
     return () => clearInterval(interval);
   }, []);
+
   const startFlipping = () => {
     interval = setInterval(() => {
       setCards((prevCards) => {
-        const newArray = [...prevCards]; // create a copy of the array
-        newArray.unshift(newArray.pop()); // move the last element to the front
+        const newArray = [...prevCards];
+        newArray.unshift(newArray.pop());
         return newArray;
       });
     }, 5000);
@@ -26,28 +26,20 @@ export const CardStack = ({ items, offset, scaleFactor }) => {
 
   return (
     <div className="relative h-60 w-60 md:h-32 md:w-96">
-      {cards.map((card, index) => {
-        return (
-          <motion.div
-            key={card.id}
-            className="absolute bg-[#F9FAFB] p-6 rounded-3xl shadow-md border border-[#E5E7EB] flex flex-col justify-between"
-            style={{
-              transformOrigin: "top center",
-            }}
-            animate={{
-              top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR,
-              zIndex: cards.length - index,
-            }}
-          >
-            <div className="font-normal text-[#6B7280]">{card.content}</div>
-            <div>
-              <p className="font-medium text-[#111827]">{card.name}</p>
-              <p className="font-normal text-[#6B7280]">{card.designation}</p>
-            </div>
-          </motion.div>
-        );
-      })}
+      {cards.map((card, index) => (
+        <motion.div
+          key={card.id}
+          className="absolute bg-surface p-8 rounded-2xl shadow-elevated border border-grayLight flex flex-col justify-between"
+          style={{ transformOrigin: "top center" }}
+          animate={{
+            top: index * -CARD_OFFSET,
+            scale: 1 - index * SCALE_FACTOR,
+            zIndex: cards.length - index,
+          }}
+        >
+          <div className="font-normal">{card.content}</div>
+        </motion.div>
+      ))}
     </div>
   );
 };

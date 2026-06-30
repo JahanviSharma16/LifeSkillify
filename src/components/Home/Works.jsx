@@ -1,47 +1,46 @@
+import homeData from "../../data/home.json";
+
 const Works = () => {
+  const { howItWorks } = homeData;
+
   return (
-   <section className="min-h-screen px-4 md:px-12 lg:px-32 py-16 bg-[#F9FAFB] text-[#111827] flex flex-col items-center">
-  <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-[#111827] text-center">
-    How It Works
-  </h2>
-  <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-[#F9FAFB] via-[#3B82F6] to-[#F9FAFB] animate-gradient" />
-  <p className="text-[#6B7280] text-lg max-w-2xl text-center mb-12">
-    LifeSkillify simplifies growth with three simple steps that fit into your daily life.
-  </p>
+    <section id="how-it-works" className="px-4 md:px-12 lg:px-32 py-24 md:py-32 bg-Background">
+      <div className="max-w-3xl mx-auto text-center mb-16 md:mb-20">
+        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4 block">
+          {howItWorks.eyebrow}
+        </span>
+        <h2 className="text-3xl md:text-4xl font-bold text-text mb-5">
+          {howItWorks.title}
+        </h2>
+        <p className="text-lg text-grayMid">{howItWorks.description}</p>
+      </div>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-    {/* Step 1 */}
-    <div className="p-6 rounded-xl bg-gradient-to-br from-[#EFF6FF] to-white shadow-md border border-[#E5E7EB] transition-transform hover:-translate-y-2">
-      <h3 className="text-xl font-bold mb-2 text-[#111827]">
-        1. Get Your Daily Lesson
-      </h3>
-      <p className="text-[#6B7280]">
-        Receive a new, bite-sized life skill lesson every day – delivered straight to your dashboard.
-      </p>
-    </div>
+      <div className="max-w-4xl mx-auto relative">
+        <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-accent/50 via-accent/20 to-transparent hidden md:block" />
 
-    {/* Step 2 */}
-    <div className="p-6 rounded-xl bg-gradient-to-br from-[#F0FDF4] to-white shadow-md border border-[#E5E7EB] transition-transform hover:-translate-y-2">
-      <h3 className="text-xl font-bold mb-2 text-[#111827]">
-        2. Practice & Reflect
-      </h3>
-      <p className="text-[#6B7280]">
-        Take a minute to reflect and apply it through engaging micro-practices and challenges.
-      </p>
-    </div>
-
-    {/* Step 3 */}
-    <div className="p-6 rounded-xl bg-gradient-to-br from-[#FEF9F5] to-white shadow-md border border-[#E5E7EB] transition-transform hover:-translate-y-2">
-      <h3 className="text-xl font-bold mb-2 text-[#111827]">
-        3. Track Your Growth
-      </h3>
-      <p className="text-[#6B7280]">
-        Watch your growth unfold with weekly insights and achievements to keep you motivated.
-      </p>
-    </div>
-  </div>
-</section>
-
+        <div className="space-y-12 md:space-y-16">
+          {howItWorks.steps.map((step, idx) => (
+            <div key={idx} className="relative flex gap-8 md:gap-12 items-start">
+              <div className="flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-primary text-white flex items-center justify-center font-bold text-sm md:text-base shadow-card z-10 ring-2 ring-accent/20">
+                {step.number}
+              </div>
+              <div className="flex-grow pt-1 md:pt-2">
+                <h3 className="text-xl md:text-2xl font-bold text-text mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-grayMid leading-relaxed mb-3 max-w-xl">
+                  {step.description}
+                </p>
+                <span className="inline-flex items-center gap-2 text-sm font-medium text-accentDark">
+                  <span className="w-1 h-1 rounded-full bg-accent" />
+                  {step.detail}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
   );
 };
 

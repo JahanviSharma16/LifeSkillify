@@ -1,19 +1,8 @@
 import { useState } from "react";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import courses from "../../helper/courses";
-
-// Dummy category list
-const categories = [
-  { title: "Communication" },
-  { title: "Time Management" },
-  { title: "Personal Finance" },
-  { title: "Mental Wellness" },
-  { title: "Critical Thinking" },
-  { title: "Productivity" },
-  { title: "Self Discipline" },
-  { title: "Emotional Intelligence" },
-];
+import courses from "../../data/courses.json";
+import categories from "../../data/categories.json";
 
 const SkillCategories = () => {
   const [startIndex, setStartIndex] = useState(0);
@@ -41,119 +30,102 @@ const SkillCategories = () => {
     : courses;
 
   return (
-   <section className="py-20 px-6 bg-Background text-primary">
-  <div>
-    <h2 className="text-3xl font-bold text-center mb-10">
-      Explore by Category
-    </h2>
+    <section id="categories" className="py-20 px-6 md:px-12 lg:px-32 bg-Background">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-3 text-text">
+          Explore by Category
+        </h2>
+        <div className="section-divider mb-10 mx-auto" />
 
-    {/* Category Buttons */}
-    <div className="flex items-center justify-center space-x-4 max-w-screen-lg mx-auto">
-      <button
-        onClick={() => handleArrowClick("left")}
-        disabled={startIndex === 0}
-        aria-label="Scroll categories left"
-        className="p-2 rounded-full border border-Borders hover:bg-Accent hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <FaArrowLeftLong />
-      </button>
-
-      <div className="flex gap-4 overflow-x-auto no-scrollbar" role="list">
-        {visibleCategories.map((category) => (
+        <div className="flex items-center justify-center space-x-4 max-w-screen-lg mx-auto">
           <button
-            key={category.title}
-            onClick={() =>
-              setSelectedCategory(
-                selectedCategory === category.title ? null : category.title
-              )
-            }
-            className={`min-w-[150px] md:py-3 py-1 md:px-6 px-2 rounded-lg border transition duration-300 ${
-              selectedCategory === category.title
-                ? "bg-Accent text-white border-Accent"
-                : "bg-Highlight text-primary border-Borders hover:bg-Accent hover:text-white"
-            }`}
-            aria-pressed={selectedCategory === category.title}
-            role="listitem"
+            onClick={() => handleArrowClick("left")}
+            disabled={startIndex === 0}
+            className="p-2.5 rounded-full border border-grayLight text-grayDark hover:bg-accentLight hover:border-accent/30 disabled:opacity-30 transition"
           >
-            {category.title}
+            <FaArrowLeftLong />
           </button>
-        ))}
-      </div>
 
-      <button
-        onClick={() => handleArrowClick("right")}
-        disabled={startIndex + categoriesPerPage >= categories.length}
-        aria-label="Scroll categories right"
-        className="p-2 rounded-full border border-Borders hover:bg-Accent hover:text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <FaArrowRightLong />
-      </button>
-    </div>
-  </div>
-
-  {/* Courses Grid */}
-  <div className="max-w-7xl mx-auto pt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-2 sm:px-6 md:px-0">
-    {filteredCourses.length > 0 ? (
-      filteredCourses.map((course) => (
-        <article
-          key={course.id}
-          className="bg-white text-primary rounded-lg shadow-md flex flex-col overflow-hidden border border-Borders"
-        >
-          <img
-            src={course.image}
-            alt={`Cover image for ${course.title}`}
-            className="w-full h-48 object-cover"
-            loading="lazy"
-          />
-          <div className="p-4 sm:p-6 flex flex-col justify-between flex-grow">
-            <div>
-              <span className="text-xs text-secondary">{course.category}</span>
-              <h3 className="text-lg font-bold mt-1">{course.title}</h3>
-              <p className="text-sm text-secondary mt-2">
-                {course.description.length > 100
-                  ? course.description.substring(0, 100) + "..."
-                  : course.description}
-              </p>
-            </div>
-
-            <div className="flex items-center justify-between mt-4">
-              <span className="text-sm text-secondary">
-                👤 {course.users} users
-              </span>
-              <Link
-                to={`/course-details/${course.id}`}
-                className="text-Accent font-bold underline underline-offset-8 flex items-center"
-                aria-label={`Read more about ${course.title}`}
+          <div className="flex gap-3 overflow-x-auto scrollbar-none">
+            {visibleCategories.map((category, index) => (
+              <button
+                key={index}
+                onClick={() =>
+                  setSelectedCategory(
+                    selectedCategory === category.title ? null : category.title
+                  )
+                }
+                className={`min-w-[140px] py-2.5 px-5 rounded-xl border text-sm font-medium transition duration-300 ${
+                  selectedCategory === category.title
+                    ? "bg-primary text-white border-primary shadow-card"
+                    : "bg-surface text-grayDark border-grayLight hover:border-accent/40 hover:text-accentDark"
+                }`}
               >
-                Read More
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-5 h-5 ml-2"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75"
-                  />
-                </svg>
-              </Link>
-            </div>
+                {category.title}
+              </button>
+            ))}
           </div>
-        </article>
-      ))
-    ) : (
-      <p className="text-secondary text-center col-span-full">
-        No courses found for this category.
-      </p>
-    )}
-  </div>
-</section>
 
+          <button
+            onClick={() => handleArrowClick("right")}
+            disabled={startIndex + categoriesPerPage >= categories.length}
+            className="p-2.5 rounded-full border border-grayLight text-grayDark hover:bg-accentLight hover:border-accent/30 disabled:opacity-30 transition"
+          >
+            <FaArrowRightLong />
+          </button>
+        </div>
+
+        <div className="pt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          {filteredCourses.length > 0 ? (
+            filteredCourses.map((course) => (
+              <div
+                key={course.id}
+                className="bg-surface rounded-2xl shadow-card border border-grayLight flex flex-col overflow-hidden hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
+              >
+                <img
+                  src={course.image}
+                  alt={course.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs font-medium text-accentDark bg-accentLight border border-accent/10 px-2.5 py-0.5 rounded-full">
+                      {course.category}
+                    </span>
+                    <span className="text-xs text-grayMid">{course.duration}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-text">{course.title}</h3>
+                  <p className="text-sm text-grayMid mt-2 leading-relaxed flex-grow">
+                    {course.description.length > 100
+                      ? course.description.substring(0, 100) + "..."
+                      : course.description}
+                  </p>
+
+                  <div className="flex items-center justify-between mt-5 pt-4 border-t border-grayLight">
+                    <span className="text-sm text-grayMid">
+                      {course.users.toLocaleString()} learners
+                    </span>
+                    <Link
+                      to={`/course-details/${course.id}`}
+                      className="text-accentDark font-semibold text-sm hover:text-accent transition flex items-center gap-1.5"
+                    >
+                      Read More
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5L19.5 4.5M19.5 4.5H8.25M19.5 4.5V15.75" />
+                      </svg>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="text-grayMid text-center col-span-full py-12">
+              No courses found for this category.
+            </p>
+          )}
+        </div>
+      </div>
+    </section>
   );
 };
 

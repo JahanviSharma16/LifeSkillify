@@ -2,33 +2,32 @@ import { grow } from "../../helper/images";
 
 const SkillHero = () => {
   return (
-  <section className="relative min-h-screen w-full bg-Background text-primary overflow-hidden">
-  {/* Background Image */}
-  <img
-    src="https://img.freepik.com/free-photo/hands-working-digital-device-network-graphic-overlay_53876-132150.jpg?semt=ais_hybrid&w=740"
-    alt="" // Consider adding alt text if image conveys meaning
-    className="w-full h-full object-cover absolute top-0 left-0 z-0"
-  />
+    <section className="relative min-h-[70vh] w-full bg-hero-gradient overflow-hidden pt-20">
+      <img
+        src={grow}
+        alt="Growth"
+        className="w-full h-full object-cover absolute top-0 left-0 z-0 opacity-20"
+      />
 
-  {/* Gradient Overlay */}
-  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-Background to-primary opacity-90 z-10" />
-
-  {/* Text Content */}
-  <div className="absolute bottom-24 left-0 z-20 p-6 md:p-12 max-w-4xl px-6 md:px-32">
-    <h1 className="text-2xl md:text-5xl font-bold text-primary mb-4">
-      Choose Your Path to Growth
-    </h1>
-    <p className="text-sm md:text-lg text-secondary mb-6 max-w-lg">
-      Discover skills that elevate your daily life. Whether you're into
-      communication, productivity, or personal finance — find your path and
-      start learning in minutes.
-    </p>
-    <button className="px-6 py-3 border-2 border-Accent bg-Accent text-white rounded-full hover:bg-Accent/90 transition duration-300">
-      Explore Categories
-    </button>
-  </div>
-</section>
-
+      <div className="relative z-10 flex flex-col justify-center min-h-[60vh] p-6 md:p-12 lg:px-32 max-w-4xl">
+        <span className="inline-block w-fit px-4 py-1.5 bg-accentLight text-accentDark text-sm font-medium rounded-full mb-6 border border-accent/10">
+          8+ skill tracks available
+        </span>
+        <h1 className="text-3xl md:text-5xl font-bold text-text mb-5 leading-tight">
+          Choose Your Path to Growth
+        </h1>
+        <p className="text-base md:text-lg text-grayMid mb-8 leading-relaxed max-w-2xl">
+          Discover skills that elevate your daily life. Whether you&apos;re into communication,
+          productivity, or personal finance — find your path and start learning in minutes.
+        </p>
+        <a
+          href="#categories"
+          className="w-fit px-8 py-3.5 bg-primary text-white font-semibold rounded-xl shadow-card hover:bg-primaryDark transition duration-300"
+        >
+          Explore Categories
+        </a>
+      </div>
+    </section>
   );
 };
 

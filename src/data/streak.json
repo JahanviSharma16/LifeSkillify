@@ -1,0 +1,13 @@
+{
+  "currentStreak": 7,
+  "longestStreak": 14,
+  "totalSkillsCompleted": 23,
+  "categoryCount": {
+    "Communication": 5,
+    "Productivity": 4,
+    "Personal Finance": 3,
+    "Mental Wellness": 4,
+    "Self-Awareness": 3,
+    "Critical Thinking": 4
+  }
+}
