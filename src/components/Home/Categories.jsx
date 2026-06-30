@@ -1,76 +1,64 @@
+import { Link } from "react-router-dom";
+import homeData from "../../data/home.json";
+
 const Categories = () => {
+  const { categories } = homeData;
+
   return (
-    <section className="min-h-screen px-4 md:px-12 lg:px-32 py-16 bg-Background text-white flex flex-col items-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-primary text-center">
-        Skill Categories
-      </h2>
-      <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-Background via-white to-Background animate-gradient" />
-      <p className="text-grayMid text-lg max-w-2xl text-center mb-12">
-        Explore the key areas where you’ll build habits, strengthen your
-        mindset, and grow daily.
-      </p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-        {/* Card 1 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">Communication</h3>
-          <p className="text-grayMid">
-            Sharpen how you speak, listen, and express with confidence in every
-            conversation.
-          </p>
+    <section id="skills" className="px-4 md:px-12 lg:px-32 py-24 md:py-32 bg-Background">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+          <div className="max-w-xl">
+            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-accent mb-4 block">
+              {categories.eyebrow}
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-text mb-4">
+              {categories.title}
+            </h2>
+            <p className="text-grayMid text-lg">{categories.description}</p>
+          </div>
+          <Link
+            to="/skill"
+            className="inline-flex items-center gap-2 text-accentDark font-semibold hover:text-accent transition shrink-0"
+          >
+            View all skills →
+          </Link>
         </div>
 
-        {/* Card 2 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">Productivity</h3>
-          <p className="text-grayMid">
-            Learn how to manage your time, focus better, and get things done
-            without burnout.
-          </p>
-        </div>
-
-        {/* Card 3 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">
-            Mental Resilience
-          </h3>
-          <p className="text-grayMid">
-            Build inner strength to stay calm, bounce back, and handle stress
-            with clarity.
-          </p>
-        </div>
-
-        {/* Card 4 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">
-            Habits & Discipline
-          </h3>
-          <p className="text-grayMid">
-            Create lasting habits and take consistent actions toward your
-            personal goals.
-          </p>
-        </div>
-
-        {/* Card 5 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">
-            Self-Awareness
-          </h3>
-          <p className="text-grayMid">
-            Understand yourself better to improve decision-making, focus, and
-            relationships.
-          </p>
-        </div>
-
-        {/* Card 6 */}
-        <div className="bg-white/5 border border-primary/30 backdrop-blur-md p-6 rounded-2xl shadow-xl hover:shadow-primary transition duration-300">
-          <h3 className="text-xl font-bold mb-2 text-primary">
-            Finance Basics
-          </h3>
-          <p className="text-grayMid">
-            Learn simple and essential money management skills to handle your
-            finances wisely.
-          </p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-4">
+          {categories.items.map((cat, idx) => (
+            <Link
+              key={cat.id}
+              to="/skill"
+              className={`group relative overflow-hidden rounded-2xl border border-grayLight bg-white p-5 md:p-6 transition-all duration-300 hover:shadow-elevated hover:border-accent/25 hover:-translate-y-1 ${
+                idx === 0 ? "md:col-span-2 md:row-span-2 md:p-8 bg-card-gradient" : ""
+              }`}
+            >
+              {idx === 0 && (
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-accent to-transparent" />
+              )}
+              <span className={`block mb-3 ${idx === 0 ? "text-4xl" : "text-2xl"}`}>
+                {cat.icon}
+              </span>
+              <h3
+                className={`font-bold text-text group-hover:text-accentDark transition ${
+                  idx === 0 ? "text-xl md:text-2xl mb-2" : "text-sm md:text-base mb-1"
+                }`}
+              >
+                {cat.title}
+              </h3>
+              <p
+                className={`text-grayMid leading-snug ${
+                  idx === 0 ? "text-sm md:text-base" : "text-xs md:text-sm"
+                }`}
+              >
+                {cat.description}
+              </p>
+              <span className="absolute bottom-4 right-4 text-xs font-medium text-accent opacity-0 group-hover:opacity-100 transition-opacity">
+                {cat.lessonCount} lessons
+              </span>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

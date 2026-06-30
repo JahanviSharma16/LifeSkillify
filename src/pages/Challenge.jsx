@@ -1,15 +1,17 @@
-
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ChallengeHero from "../components/Challenge/ChallengeHero";
+import ChallengeGrid from "../components/Challenge/ChallengeGrid";
 
 const Challenge = () => {
   return (
-    <div className="bg-Background text-white pt-16">
-    <Navbar />
-    <h1>Challenge</h1>
-    <Footer />
-  </div>
-  )
-}
+    <div className="bg-Background text-text min-h-screen">
+      <Navbar />
+      <ChallengeHero />
+      <ChallengeGrid />
+      <Footer />
+    </div>
+  );
+};
 
-export default Challenge
+export default Challenge;

@@ -1,0 +1,129 @@
+{
+  "hero": {
+    "title": "Weekly Challenges",
+    "description": "Push yourself beyond daily lessons. Complete challenges, earn badges, and grow alongside the LifeSkillify community."
+  },
+  "stats": {
+    "activeChallenges": 4,
+    "participants": 2847,
+    "completedThisWeek": 612
+  },
+  "challenges": [
+    {
+      "id": 1,
+      "title": "7-Day Gratitude Journal",
+      "category": "Mental Wellness",
+      "duration": "7 days",
+      "difficulty": "Easy",
+      "participants": 842,
+      "description": "Write down three things you're grateful for each morning. Build a positive mindset habit that compounds over time.",
+      "tasks": [
+        "Day 1: Write 3 things you're grateful for",
+        "Day 2: Include one person you're thankful for",
+        "Day 3: Add one small win from yesterday",
+        "Day 4: Reflect on a challenge that made you stronger",
+        "Day 5: Appreciate something about your environment",
+        "Day 6: Write about a skill you're developing",
+        "Day 7: Review your week and note patterns"
+      ],
+      "reward": "Mindful Starter Badge",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1499203537865-cb5ef56b5b1a?w=600&q=80"
+    },
+    {
+      "id": 2,
+      "title": "No-Phone Morning",
+      "category": "Productivity",
+      "duration": "5 days",
+      "difficulty": "Medium",
+      "participants": 534,
+      "description": "Keep your phone away for the first 60 minutes after waking. Reclaim your mornings for intentional growth.",
+      "tasks": [
+        "Day 1: No phone for first 30 minutes",
+        "Day 2: Extend to 45 minutes",
+        "Day 3: Reach 60 minutes — do your daily skill lesson instead",
+        "Day 4: Add a 5-minute stretch or walk",
+        "Day 5: Reflect on how your mornings have changed"
+      ],
+      "reward": "Focus Champion Badge",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&q=80"
+    },
+    {
+      "id": 3,
+      "title": "Budget Awareness Week",
+      "category": "Personal Finance",
+      "duration": "7 days",
+      "difficulty": "Medium",
+      "participants": 391,
+      "description": "Track every expense for a week. No judgment — just awareness. Knowledge is the first step to financial confidence.",
+      "tasks": [
+        "Day 1: Set up a simple expense tracker (notes app works)",
+        "Day 2: Log every purchase, no matter how small",
+        "Day 3: Categorize spending: needs vs wants",
+        "Day 4: Identify your top 3 spending categories",
+        "Day 5: Find one expense you can reduce",
+        "Day 6: Calculate your weekly total",
+        "Day 7: Set one financial goal for next month"
+      ],
+      "reward": "Money Mindful Badge",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80"
+    },
+    {
+      "id": 4,
+      "title": "Active Listening Challenge",
+      "category": "Communication",
+      "duration": "5 days",
+      "difficulty": "Easy",
+      "participants": 678,
+      "description": "Practice active listening in every conversation. Paraphrase, ask questions, and resist the urge to interrupt.",
+      "tasks": [
+        "Day 1: Paraphrase once in every conversation",
+        "Day 2: Ask one open-ended question per chat",
+        "Day 3: Put phone away during all conversations",
+        "Day 4: Practice the 2-second pause before responding",
+        "Day 5: Share your biggest insight in Community"
+      ],
+      "reward": "Connection Builder Badge",
+      "status": "active",
+      "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80"
+    },
+    {
+      "id": 5,
+      "title": "30-Day Habit Streak",
+      "category": "Self Discipline",
+      "duration": "30 days",
+      "difficulty": "Hard",
+      "participants": 1203,
+      "description": "Complete your daily LifeSkillify lesson for 30 consecutive days. The ultimate consistency challenge.",
+      "tasks": [
+        "Complete today's skill lesson every day",
+        "Log your completion in the progress tracker",
+        "Share milestones at days 7, 14, and 21 in Community",
+        "Reflect on what changed by day 30"
+      ],
+      "reward": "Growth Master Badge",
+      "status": "featured",
+      "image": "https://images.unsplash.com/photo-1434030216561-40b4fae0e0c2?w=600&q=80"
+    },
+    {
+      "id": 6,
+      "title": "Digital Detox Weekend",
+      "category": "Mental Wellness",
+      "duration": "2 days",
+      "difficulty": "Hard",
+      "participants": 289,
+      "description": "Spend one full weekend with minimal screen time. Rediscover offline joys and mental clarity.",
+      "tasks": [
+        "Saturday: Limit social media to 30 minutes total",
+        "Saturday: Do one offline activity you enjoy",
+        "Sunday: No screens before noon",
+        "Sunday: Journal about how you feel without constant stimulation"
+      ],
+      "reward": "Clarity Seeker Badge",
+      "status": "upcoming",
+      "image": "https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&q=80"
+    }
+  ]
+}

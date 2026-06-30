@@ -1,0 +1,294 @@
+[
+  {
+    "id": 1,
+    "title": "Mastering Conversations",
+    "category": "Communication",
+    "image": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+    "users": 1200,
+    "duration": "4 weeks",
+    "difficulty": "Beginner",
+    "lessons": 12,
+    "description": "Learn how to express ideas clearly and confidently in any situation — from casual chats to high-stakes presentations.",
+    "details": {
+      "intro": "Effective communication is the foundation of every successful relationship and career. This course takes you from nervous speaker to confident communicator through practical, bite-sized lessons you can apply immediately.",
+      "learningOutcomes": [
+        "Speak with clarity and confidence in any setting",
+        "Master active listening and empathetic responses",
+        "Handle difficult conversations with grace",
+        "Structure your thoughts for maximum impact"
+      ],
+      "lessons": [
+        { "title": "The Foundations of Clear Communication", "duration": "8 min" },
+        { "title": "Active Listening Techniques", "duration": "6 min" },
+        { "title": "Body Language That Builds Trust", "duration": "7 min" },
+        { "title": "Asking Powerful Questions", "duration": "5 min" },
+        { "title": "Giving and Receiving Feedback", "duration": "8 min" },
+        { "title": "Navigating Difficult Conversations", "duration": "10 min" }
+      ],
+      "questions": [
+        {
+          "question": "What are the key components of effective communication?",
+          "answer": "They include clarity, active listening, appropriate body language, and timely feedback. Great communicators balance speaking with understanding."
+        },
+        {
+          "question": "How can I overcome the fear of public speaking?",
+          "answer": "Practice regularly, start with small groups, prepare well in advance, and focus on serving your audience rather than impressing them."
+        },
+        {
+          "question": "How long should I practice each day?",
+          "answer": "Just 10-15 minutes of focused practice daily is enough to see significant improvement within 4 weeks."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Time Blocking Techniques",
+    "category": "Time Management",
+    "image": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
+    "users": 950,
+    "duration": "3 weeks",
+    "difficulty": "Beginner",
+    "lessons": 10,
+    "description": "Boost your productivity by learning how to organize your day efficiently with proven time blocking strategies.",
+    "details": {
+      "intro": "Stop letting your calendar control you. Time blocking gives you a framework to accomplish deep work, manage interruptions, and end each day feeling accomplished rather than exhausted.",
+      "learningOutcomes": [
+        "Design a realistic daily schedule that you actually follow",
+        "Protect focus time for your most important work",
+        "Batch similar tasks to reduce context-switching",
+        "Build buffer time for the unexpected"
+      ],
+      "lessons": [
+        { "title": "Introduction to Time Blocking", "duration": "6 min" },
+        { "title": "Identifying Your Peak Energy Hours", "duration": "5 min" },
+        { "title": "The Deep Work Block", "duration": "8 min" },
+        { "title": "Batching Admin and Email", "duration": "6 min" },
+        { "title": "Weekly Planning Ritual", "duration": "7 min" }
+      ],
+      "questions": [
+        {
+          "question": "What is time blocking?",
+          "answer": "Time blocking is scheduling specific tasks into dedicated time slots on your calendar, treating them like important meetings you can't miss."
+        },
+        {
+          "question": "How long should a focus block be?",
+          "answer": "Most people do best with 45-90 minute blocks. Start with 25-minute Pomodoro sessions and gradually extend as your focus improves."
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "title": "Investing 101",
+    "category": "Personal Finance",
+    "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff2e?w=800&q=80",
+    "users": 1800,
+    "duration": "5 weeks",
+    "difficulty": "Beginner",
+    "lessons": 15,
+    "description": "Understand the basics of investing and how to grow your wealth steadily, even with a modest starting amount.",
+    "details": {
+      "intro": "Investing doesn't require a finance degree or a large bank account. This course demystifies investing with clear explanations and actionable first steps for beginners.",
+      "learningOutcomes": [
+        "Understand stocks, bonds, and mutual funds",
+        "Build a diversified portfolio aligned with your goals",
+        "Calculate compound interest and long-term growth",
+        "Avoid common beginner investing mistakes"
+      ],
+      "lessons": [
+        { "title": "Why Invest? The Power of Compound Interest", "duration": "7 min" },
+        { "title": "Stocks, Bonds, and Funds Explained", "duration": "10 min" },
+        { "title": "Risk Tolerance and Goal Setting", "duration": "6 min" },
+        { "title": "Building Your First Portfolio", "duration": "8 min" },
+        { "title": "Dollar-Cost Averaging Strategy", "duration": "6 min" }
+      ],
+      "questions": [
+        {
+          "question": "How much money do I need to start investing?",
+          "answer": "You can start with as little as ₹500/month through SIPs (Systematic Investment Plans). Consistency matters more than the initial amount."
+        },
+        {
+          "question": "Is investing risky?",
+          "answer": "All investments carry some risk, but diversification and a long-term horizon significantly reduce it. Never invest money you need within 2 years."
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "title": "Managing Anxiety",
+    "category": "Mental Wellness",
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+    "users": 750,
+    "duration": "4 weeks",
+    "difficulty": "Beginner",
+    "lessons": 11,
+    "description": "Develop practical techniques to cope with anxiety and build inner peace through evidence-based mindfulness practices.",
+    "details": {
+      "intro": "Anxiety is one of the most common mental health challenges, yet it's highly manageable with the right tools. This course provides gentle, science-backed techniques you can use anywhere.",
+      "learningOutcomes": [
+        "Recognize anxiety triggers and early warning signs",
+        "Practice breathing and grounding techniques",
+        "Use the RAIN mindfulness method",
+        "Build a personal anxiety management toolkit"
+      ],
+      "lessons": [
+        { "title": "Understanding Anxiety", "duration": "7 min" },
+        { "title": "The 4-7-8 Breathing Technique", "duration": "5 min" },
+        { "title": "Grounding with the 5-4-3-2-1 Method", "duration": "6 min" },
+        { "title": "The RAIN Technique", "duration": "8 min" },
+        { "title": "Building Your Calm Toolkit", "duration": "7 min" }
+      ],
+      "questions": [
+        {
+          "question": "When should I seek professional help?",
+          "answer": "If anxiety significantly interferes with daily life, sleep, or relationships for more than two weeks, consider speaking with a mental health professional."
+        },
+        {
+          "question": "How quickly will I see results?",
+          "answer": "Breathing techniques work immediately. Building lasting resilience takes 3-4 weeks of consistent daily practice."
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "title": "Think Like a Pro",
+    "category": "Critical Thinking",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    "users": 880,
+    "duration": "3 weeks",
+    "difficulty": "Intermediate",
+    "lessons": 9,
+    "description": "Sharpen your decision-making and analytical skills with frameworks used by top professionals.",
+    "details": {
+      "intro": "Critical thinking isn't about being negative — it's about making better decisions by questioning assumptions, evaluating evidence, and considering multiple perspectives.",
+      "learningOutcomes": [
+        "Identify cognitive biases in your thinking",
+        "Apply structured decision-making frameworks",
+        "Evaluate information sources critically",
+        "Solve problems systematically"
+      ],
+      "lessons": [
+        { "title": "What Is Critical Thinking?", "duration": "6 min" },
+        { "title": "Common Cognitive Biases", "duration": "8 min" },
+        { "title": "The Pros and Cons Matrix", "duration": "5 min" },
+        { "title": "First Principles Thinking", "duration": "7 min" },
+        { "title": "Evaluating Sources and Evidence", "duration": "6 min" }
+      ],
+      "questions": [
+        {
+          "question": "Can critical thinking be learned?",
+          "answer": "Absolutely. Like any skill, it improves with deliberate practice. This course gives you frameworks to practice daily."
+        },
+        {
+          "question": "How is this different from being skeptical?",
+          "answer": "Critical thinking is balanced — you question assumptions while remaining open to new evidence. Skepticism without openness can become cynicism."
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "title": "Emotional Intelligence Essentials",
+    "category": "Emotional Intelligence",
+    "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+    "users": 1100,
+    "duration": "4 weeks",
+    "difficulty": "Beginner",
+    "lessons": 12,
+    "description": "Develop self-awareness, empathy, and emotional regulation — the skills that define great leaders and partners.",
+    "details": {
+      "intro": "Emotional intelligence (EQ) predicts success in relationships and careers better than IQ alone. This course helps you understand and manage emotions — yours and others'.",
+      "learningOutcomes": [
+        "Recognize and label your emotions accurately",
+        "Regulate emotional responses in stressful situations",
+        "Demonstrate empathy in conversations",
+        "Use emotional awareness to improve relationships"
+      ],
+      "lessons": [
+        { "title": "The Four Pillars of EQ", "duration": "7 min" },
+        { "title": "Emotional Self-Awareness", "duration": "6 min" },
+        { "title": "Regulation Strategies", "duration": "8 min" },
+        { "title": "Empathy in Practice", "duration": "7 min" },
+        { "title": "EQ in Leadership and Teams", "duration": "9 min" }
+      ],
+      "questions": [
+        {
+          "question": "Can EQ be improved at any age?",
+          "answer": "Yes. Unlike IQ, emotional intelligence continues to develop throughout life with intentional practice and reflection."
+        },
+        {
+          "question": "What's the fastest way to build EQ?",
+          "answer": "Daily emotion journaling — noting what you felt, why, and how you responded — accelerates self-awareness dramatically."
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "title": "Deep Focus Mastery",
+    "category": "Productivity",
+    "image": "https://images.unsplash.com/photo-1434030216561-40b4fae0e0c2?w=800&q=80",
+    "users": 670,
+    "duration": "3 weeks",
+    "difficulty": "Intermediate",
+    "lessons": 8,
+    "description": "Eliminate distractions and enter flow states on demand with science-backed focus techniques.",
+    "details": {
+      "intro": "In a world of constant notifications, the ability to focus deeply is a superpower. This course teaches you how to protect your attention and do your best work.",
+      "learningOutcomes": [
+        "Design an environment optimized for focus",
+        "Use the Pomodoro and flow state techniques",
+        "Manage digital distractions effectively",
+        "Recover focus after interruptions"
+      ],
+      "lessons": [
+        { "title": "The Attention Economy", "duration": "6 min" },
+        { "title": "Environment Design for Focus", "duration": "7 min" },
+        { "title": "The Pomodoro Technique", "duration": "5 min" },
+        { "title": "Digital Minimalism Basics", "duration": "8 min" }
+      ],
+      "questions": [
+        {
+          "question": "How do I focus with an open office?",
+          "answer": "Use noise-canceling headphones, signal 'focus time' to colleagues, and schedule your deepest work during quieter hours."
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "title": "Building Unbreakable Habits",
+    "category": "Self Discipline",
+    "image": "https://images.unsplash.com/photo-1499203537865-cb5ef56b5b1a?w=800&q=80",
+    "users": 1450,
+    "duration": "4 weeks",
+    "difficulty": "Beginner",
+    "lessons": 10,
+    "description": "Use behavioral science to build habits that stick — and break the ones that hold you back.",
+    "details": {
+      "intro": "Habits shape 40% of our daily actions. This course applies proven behavioral science to help you design habits that align with who you want to become.",
+      "learningOutcomes": [
+        "Apply the habit loop: cue, routine, reward",
+        "Use habit stacking to build new behaviors",
+        "Design your environment for success",
+        "Break bad habits with replacement strategies"
+      ],
+      "lessons": [
+        { "title": "The Science of Habit Formation", "duration": "7 min" },
+        { "title": "The Habit Loop Explained", "duration": "6 min" },
+        { "title": "Habit Stacking Technique", "duration": "5 min" },
+        { "title": "Breaking Bad Habits", "duration": "8 min" },
+        { "title": "The 21/66 Day Framework", "duration": "6 min" }
+      ],
+      "questions": [
+        {
+          "question": "How long does it take to form a habit?",
+          "answer": "Research shows 18-254 days depending on complexity, with an average of 66 days. Consistency matters more than speed."
+        }
+      ]
+    }
+  }
+]

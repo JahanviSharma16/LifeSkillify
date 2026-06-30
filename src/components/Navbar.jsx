@@ -1,59 +1,71 @@
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react'; // Hamburger and Close icon
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { to: "/todayskill", label: "Today's Skill" },
+  { to: "/skill", label: "Skills" },
+  { to: "/challenge", label: "Challenges" },
+  { to: "/community", label: "Community" },
+];
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const isLoggedIn = false; // Replace with actual auth logic
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="w-full px-6 md:px-32 py-4 flex justify-between items-center bg-gradient-to-r from-black to-darkshade text-white shadow-md fixed top-0 z-50">
-      <Link to="/" className="text-2xl font-bold text-primary">LifeSkillify</Link>
+    <nav className="w-full px-6 md:px-16 lg:px-32 py-4 flex justify-between items-center bg-surface/90 backdrop-blur-md border-b border-grayLight text-text shadow-soft fixed top-0 z-50">
+      <Link to="/" className="text-2xl font-bold text-text tracking-tight">
+        Life<span className="text-accent">Skillify</span>
+      </Link>
 
-      {/* Desktop Links */}
-      <div className="hidden md:flex gap-6 items-center">
-        <Link to="/todayskill" className="hover:text-primary font-medium">Today's Skill</Link>
-        <Link to="/skill" className="hover:text-primary font-medium">Skill</Link>
-        <Link to="/challenge" className="hover:text-primary font-medium">Challenge</Link>
-        <Link to="/community" className="hover:text-primary font-medium">Community</Link>
-
-        {isLoggedIn ? (
-          <Link to="/profile">
-            <img src="/user-icon.svg" alt="Profile" className="w-8 h-8 rounded-full border border-grayLight" />
+      <div className="hidden md:flex gap-1 items-center">
+        {navLinks.map((link) => (
+          <Link
+            key={link.to}
+            to={link.to}
+            className={`px-4 py-2 rounded-lg font-medium transition duration-200 ${
+              isActive(link.to)
+                ? "bg-accentLight text-accentDark"
+                : "text-grayDark hover:text-accent hover:bg-accentLight/60"
+            }`}
+          >
+            {link.label}
           </Link>
-        ) : (
-          <Link to="/sign-up">
-            <button className="px-4 py-2 border-2 border-primary bg-gradient-to-t from-darkshade to-black text-white rounded-lg hover:bg-primary transition duration-300">
-              Login / Signup
+        ))}
+        <Link
+          to="/todayskill"
+          className="ml-4 px-5 py-2.5 bg-primary text-white rounded-lg font-medium hover:bg-primaryDark transition duration-200 shadow-card"
+        >
+          Start Learning
+        </Link>
+      </div>
+
+      <div className="md:hidden z-50" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <X size={24} className="text-text" /> : <Menu size={24} className="text-text" />}
+      </div>
+
+      {menuOpen && (
+        <div className="absolute top-full left-0 w-full bg-surface border-b border-grayLight shadow-elevated flex flex-col gap-1 px-6 py-4 md:hidden z-40">
+          {navLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              onClick={() => setMenuOpen(false)}
+              className={`px-4 py-3 rounded-lg font-medium ${
+                isActive(link.to) ? "bg-accentLight text-accentDark" : "text-grayDark"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link to="/todayskill" onClick={() => setMenuOpen(false)}>
+            <button className="w-full mt-2 px-4 py-3 bg-primary text-white rounded-lg font-medium">
+              Start Learning
             </button>
           </Link>
-        )}
-      </div>
-
-      {/* Hamburger Icon */}
-      <div className="md:hidden z-50" onClick={() => setMenuOpen(!menuOpen)}>
-        {menuOpen ? <X size={28} /> : <Menu size={28} />}
-      </div>
-
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-black text-white flex flex-col gap-4 px-6 py-4 md:hidden z-40">
-          <Link to="/todayskill" onClick={() => setMenuOpen(false)} className="hover:text-primary font-medium">Today's Skill</Link>
-          <Link to="/skill" onClick={() => setMenuOpen(false)} className="hover:text-primary font-medium">Skill</Link>
-          <Link to="/challenge" onClick={() => setMenuOpen(false)} className="hover:text-primary font-medium">Challenge</Link>
-          <Link to="/community" onClick={() => setMenuOpen(false)} className="hover:text-primary font-medium">Community</Link>
-
-          {isLoggedIn ? (
-            <Link to="/profile" onClick={() => setMenuOpen(false)}>
-              <img src="/user-icon.svg" alt="Profile" className="w-8 h-8 rounded-full border border-grayLight" />
-            </Link>
-          ) : (
-            <Link to="/sign-up" onClick={() => setMenuOpen(false)}>
-              <button className="w-full px-4 py-2 border-2 border-primary bg-gradient-to-t from-darkshade to-black text-white rounded-lg hover:bg-primary transition duration-300">
-                Login / Signup
-              </button>
-            </Link>
-          )}
         </div>
       )}
     </nav>

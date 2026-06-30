@@ -1,0 +1,197 @@
+{
+  "hero": {
+    "eyebrow": "The modern way to grow",
+    "title": "Build life skills that",
+    "titleHighlight": "actually stick",
+    "description": "Five minutes a day. One focused lesson. Real progress in communication, mindset, finance, and more — designed for busy people who want to grow without overwhelm.",
+    "ctaText": "Start Today's Lesson",
+    "ctaLink": "/todayskill",
+    "secondaryCta": "Explore Skills",
+    "secondaryLink": "/skill",
+    "stats": [
+      { "value": "12K+", "label": "Active learners" },
+      { "value": "50+", "label": "Micro-lessons" },
+      { "value": "5 min", "label": "Per day" }
+    ],
+    "preview": {
+      "label": "Today's Skill",
+      "title": "Active Listening in Conversations",
+      "category": "Communication",
+      "duration": "5 min",
+      "progress": 0
+    }
+  },
+  "whyItMatters": {
+    "eyebrow": "The gap no school fills",
+    "title": "Why life skills matter more than ever",
+    "description": "Degrees open doors. Life skills help you walk through them with confidence — in relationships, at work, and with yourself.",
+    "points": [
+      {
+        "icon": "🗣️",
+        "title": "Communication",
+        "description": "Express yourself clearly, listen deeply, and navigate difficult conversations with ease."
+      },
+      {
+        "icon": "🧠",
+        "title": "Emotional Intelligence",
+        "description": "Understand your triggers, regulate your reactions, and build stronger connections."
+      },
+      {
+        "icon": "💰",
+        "title": "Personal Finance",
+        "description": "Make informed money decisions without fear, jargon, or information overload."
+      },
+      {
+        "icon": "📈",
+        "title": "Productivity",
+        "description": "Focus deeply, manage time intentionally, and accomplish more with less stress."
+      }
+    ]
+  },
+  "howItWorks": {
+    "eyebrow": "Simple by design",
+    "title": "Growth in three effortless steps",
+    "description": "No hour-long courses. No guilt. Just a rhythm that fits your real life.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Receive your daily lesson",
+        "description": "A fresh, bite-sized skill arrives each day — curated for relevance and immediate application.",
+        "detail": "Takes less than 5 minutes to complete"
+      },
+      {
+        "number": "02",
+        "title": "Practice through challenges",
+        "description": "Apply what you learn with micro-practices and weekly challenges that turn knowledge into habit.",
+        "detail": "Join 2,800+ challenge participants"
+      },
+      {
+        "number": "03",
+        "title": "Track and celebrate progress",
+        "description": "Watch your streak grow, earn badges, and see how small daily actions compound into real transformation.",
+        "detail": "Average streak: 7 days and climbing"
+      }
+    ]
+  },
+  "platform": {
+    "eyebrow": "Everything in one place",
+    "title": "A complete platform for personal growth",
+    "features": [
+      {
+        "title": "Today's Skill",
+        "description": "One curated lesson every day — always relevant, always actionable.",
+        "link": "/todayskill",
+        "linkText": "Start learning",
+        "accent": "gold"
+      },
+      {
+        "title": "Skill Library",
+        "description": "Deep-dive courses across 8 categories, from communication to financial literacy.",
+        "link": "/skill",
+        "linkText": "Browse courses",
+        "accent": "slate"
+      },
+      {
+        "title": "Weekly Challenges",
+        "description": "Push beyond lessons with community challenges that build lasting habits.",
+        "link": "/challenge",
+        "linkText": "View challenges",
+        "accent": "sand"
+      },
+      {
+        "title": "Community",
+        "description": "Share wins, ask questions, and learn from 12,000+ growth-minded people.",
+        "link": "/community",
+        "linkText": "Join community",
+        "accent": "blush"
+      }
+    ]
+  },
+  "categories": {
+    "eyebrow": "Curated learning paths",
+    "title": "Skills that shape your everyday life",
+    "description": "Each category is built around real situations — not abstract theory.",
+    "items": [
+      {
+        "id": "communication",
+        "title": "Communication",
+        "description": "Speak with clarity. Listen with intent.",
+        "icon": "💬",
+        "lessonCount": 12
+      },
+      {
+        "id": "productivity",
+        "title": "Productivity",
+        "description": "Work smarter, not longer.",
+        "icon": "⚡",
+        "lessonCount": 10
+      },
+      {
+        "id": "mental-resilience",
+        "title": "Mental Resilience",
+        "description": "Stay calm under pressure.",
+        "icon": "🧘",
+        "lessonCount": 11
+      },
+      {
+        "id": "habits",
+        "title": "Habits & Discipline",
+        "description": "Build routines that last.",
+        "icon": "🎯",
+        "lessonCount": 10
+      },
+      {
+        "id": "self-awareness",
+        "title": "Self-Awareness",
+        "description": "Know yourself. Decide better.",
+        "icon": "🔍",
+        "lessonCount": 9
+      },
+      {
+        "id": "finance",
+        "title": "Finance Basics",
+        "description": "Money confidence, simplified.",
+        "icon": "💳",
+        "lessonCount": 15
+      }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Real stories",
+    "title": "Loved by learners everywhere",
+    "featured": {
+      "quote": "I used to feel guilty about not having time for self-improvement. LifeSkillify changed that — five minutes is something I can actually commit to, and the results are undeniable.",
+      "name": "Priya K.",
+      "role": "Freelance Designer",
+      "avatar": "PK",
+      "metric": "30-day streak"
+    },
+    "items": [
+      {
+        "quote": "The daily lessons feel personal and actionable. I finally built habits that stuck.",
+        "name": "Ananya M.",
+        "role": "Student",
+        "avatar": "AM"
+      },
+      {
+        "quote": "Micro-lessons fit my schedule perfectly. I'm more mindful and confident at work.",
+        "name": "Rohan S.",
+        "role": "Marketing Executive",
+        "avatar": "RS"
+      },
+      {
+        "quote": "The budgeting challenge opened my eyes. I cut food delivery spending by 40%.",
+        "name": "Arjun T.",
+        "role": "Software Engineer",
+        "avatar": "AT"
+      }
+    ]
+  },
+  "cta": {
+    "title": "Your next skill is waiting",
+    "description": "Join 12,000+ learners who chose five minutes of growth over five more minutes of scrolling.",
+    "buttonText": "Start Today's Lesson",
+    "buttonLink": "/todayskill",
+    "secondaryText": "Free to explore · No signup required"
+  }
+}

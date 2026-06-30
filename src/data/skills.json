@@ -1,0 +1,237 @@
+[
+  {
+    "id": 1,
+    "title": "Active Listening in Conversations",
+    "category": "Communication",
+    "duration": "5 min",
+    "difficulty": "Beginner",
+    "description": "Learn how to truly hear others — not just wait for your turn to speak — and build stronger connections in every conversation.",
+    "images": [
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80",
+      "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "What Is Active Listening?",
+        "points": [
+          "Active listening means fully concentrating on what the speaker is saying, not planning your response.",
+          "It involves giving verbal and non-verbal feedback — nodding, eye contact, and brief acknowledgments.",
+          "The goal is understanding, not winning the conversation."
+        ]
+      },
+      {
+        "heading": "Three Techniques to Practice Today",
+        "points": [
+          "Paraphrase: Repeat back what you heard in your own words — 'So what you're saying is...'",
+          "Ask open-ended questions: 'How did that make you feel?' instead of yes/no questions.",
+          "Pause before responding: Take 2 seconds to process before you speak."
+        ]
+      },
+      {
+        "heading": "Your Daily Challenge",
+        "points": [
+          "In your next conversation, practice paraphrasing at least once.",
+          "Put your phone face-down during the entire exchange.",
+          "Notice how the other person responds when they feel truly heard."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The 2-Minute Morning Reset",
+    "category": "Productivity",
+    "duration": "4 min",
+    "difficulty": "Beginner",
+    "description": "Start your day with intention using a simple 2-minute ritual that sets the tone for focus and calm.",
+    "images": [
+      "https://images.unsplash.com/photo-1499203537865-cb5ef56b5b1a?w=800&q=80",
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+      "https://images.unsplash.com/photo-1545389336-cf090694435e?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "Why Mornings Matter",
+        "points": [
+          "The first 30 minutes of your day shape your mindset for the next 16 hours.",
+          "A structured morning reduces decision fatigue and reactive behavior.",
+          "Even 2 minutes of intentional practice creates a powerful anchor habit."
+        ]
+      },
+      {
+        "heading": "The 2-Minute Reset Ritual",
+        "points": [
+          "Minute 1: Take 5 deep breaths — inhale for 4 counts, exhale for 6.",
+          "Minute 2: Write down your single most important task for today.",
+          "Optional: Add one thing you're grateful for to prime a positive mindset."
+        ]
+      },
+      {
+        "heading": "Make It Stick",
+        "points": [
+          "Pair this ritual with an existing habit — right after brushing your teeth.",
+          "Keep a small notebook by your bed for the one-line journal.",
+          "Track your streak in the Progress Tracker below."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Managing Financial Anxiety",
+    "category": "Personal Finance",
+    "duration": "6 min",
+    "difficulty": "Intermediate",
+    "description": "Understand the emotional side of money and learn practical steps to reduce financial stress starting today.",
+    "images": [
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      "https://images.unsplash.com/photo-1579621970563-ebec7560ff2e?w=800&q=80",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "Money and Emotions",
+        "points": [
+          "Financial anxiety often stems from uncertainty, not actual lack of resources.",
+          "Avoidance makes anxiety worse — small, consistent actions reduce fear.",
+          "Your relationship with money is shaped by upbringing and past experiences."
+        ]
+      },
+      {
+        "heading": "Three Actions for Today",
+        "points": [
+          "List your top 3 financial worries on paper — naming them reduces their power.",
+          "Check one account balance you've been avoiding. Knowledge replaces fear.",
+          "Set a 15-minute 'money date' with yourself this week to review spending."
+        ]
+      },
+      {
+        "heading": "Building Long-Term Confidence",
+        "points": [
+          "Create a simple monthly budget using the 50/30/20 rule as a starting point.",
+          "Build a small emergency fund — even ₹500/month compounds over time.",
+          "Celebrate small wins: every bill paid on time is progress."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Handling Difficult Emotions",
+    "category": "Mental Wellness",
+    "duration": "5 min",
+    "difficulty": "Beginner",
+    "description": "Learn the RAIN technique — a mindfulness practice for processing difficult emotions without being overwhelmed.",
+    "images": [
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80",
+      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80",
+      "https://images.unsplash.com/photo-1499203537865-cb5ef56b5b1a?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "The RAIN Technique",
+        "points": [
+          "Recognize: Name the emotion you're feeling — 'I notice I'm feeling anxious.'",
+          "Allow: Let the feeling be present without trying to fix or suppress it.",
+          "Investigate: Curiously explore where you feel it in your body.",
+          "Nurture: Offer yourself compassion — 'This is hard, and I'm doing my best.'"
+        ]
+      },
+      {
+        "heading": "When to Use RAIN",
+        "points": [
+          "Before reacting to a triggering message or email.",
+          "When you feel overwhelmed during a busy day.",
+          "At the end of a stressful meeting or conversation."
+        ]
+      },
+      {
+        "heading": "Practice Today",
+        "points": [
+          "Set a reminder for 3 PM to do a 60-second RAIN check-in.",
+          "Journal one sentence about what emotion showed up most today.",
+          "Share your experience in the Community section."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Setting Healthy Boundaries",
+    "category": "Self-Awareness",
+    "duration": "5 min",
+    "difficulty": "Intermediate",
+    "description": "Discover how to say no gracefully and protect your time, energy, and mental health without guilt.",
+    "images": [
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80",
+      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=800&q=80",
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "Why Boundaries Matter",
+        "points": [
+          "Boundaries aren't walls — they're guidelines for how you want to be treated.",
+          "People who respect you will respect your boundaries; those who don't reveal important information.",
+          "Saying no to one thing means saying yes to something that matters more."
+        ]
+      },
+      {
+        "heading": "How to Say No Gracefully",
+        "points": [
+          "Use the 'thank you, but' formula: 'Thanks for thinking of me, but I can't take this on right now.'",
+          "Offer an alternative when possible: 'I can't help today, but I could next week.'",
+          "You don't owe a lengthy explanation — a simple no is complete."
+        ]
+      },
+      {
+        "heading": "Today's Practice",
+        "points": [
+          "Identify one commitment you'd like to decline this week.",
+          "Practice saying your no out loud in front of a mirror.",
+          "Notice the relief that comes from protecting your energy."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Time Blocking for Deep Work",
+    "category": "Productivity",
+    "duration": "6 min",
+    "difficulty": "Intermediate",
+    "description": "Master the art of scheduling focused work blocks to accomplish more with less stress and context-switching.",
+    "images": [
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
+      "https://images.unsplash.com/photo-1434030216561-40b4fae0e0c2?w=800&q=80",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+    ],
+    "content": [
+      {
+        "heading": "What Is Time Blocking?",
+        "points": [
+          "Time blocking assigns specific tasks to specific time slots on your calendar.",
+          "It transforms a to-do list into a realistic plan you can actually follow.",
+          "Research shows focused blocks of 25–90 minutes maximize cognitive performance."
+        ]
+      },
+      {
+        "heading": "How to Block Your Day",
+        "points": [
+          "Start with your most important task in your peak energy window (usually morning).",
+          "Batch similar tasks: emails, calls, and admin in dedicated blocks.",
+          "Include buffer time — plan for 60% of your day, leave 40% for the unexpected."
+        ]
+      },
+      {
+        "heading": "Try It Today",
+        "points": [
+          "Block one 45-minute deep work session for your hardest task.",
+          "Turn off notifications during that block — treat it like a meeting.",
+          "Review at day's end: did you honor your blocks? Adjust for tomorrow."
+        ]
+      }
+    ]
+  }
+]

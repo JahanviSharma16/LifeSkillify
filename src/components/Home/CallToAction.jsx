@@ -1,17 +1,33 @@
+import { Link } from "react-router-dom";
+import homeData from "../../data/home.json";
+
 const CallToAction = () => {
+  const { cta } = homeData;
+
   return (
-    <section className="bg-Background text-white px-6 py-20 text-center ">
-      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
-        Ready to Transform Your Life?
-      </h2>
-      <div className="h-1 w-32 md:w-40 mb-6 mx-auto bg-gradient-to-r from-Background via-white to-Background animate-gradient" />
-      <p className="text-lg md:text-xl text-grayMid max-w-2xl mx-auto mb-10">
-        Join thousands of learners building strong, confident, and consistent
-        habits—one daily lesson at a time.
-      </p>
-      <button className="px-4 py-2 border-2 border-primary bg-gradient-to-t from-darkshade to-black text-white rounded-full hover:bg-primary transition duration-300">
-        Start Your Journey Today 🚀
-      </button>
+    <section className="relative overflow-hidden px-4 md:px-12 lg:px-32 py-24 md:py-32">
+      <div className="absolute inset-0 bg-cta-gradient" />
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-accent/30 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-accent/20 rounded-full blur-3xl" />
+      </div>
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent" />
+
+      <div className="relative max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight tracking-tight">
+          {cta.title}
+        </h2>
+        <p className="text-lg md:text-xl text-stone-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+          {cta.description}
+        </p>
+        <Link
+          to={cta.buttonLink}
+          className="inline-flex items-center justify-center px-10 py-4 bg-accent text-white font-bold rounded-2xl shadow-gold hover:bg-accentDark transition-all duration-300 hover:-translate-y-0.5 text-lg"
+        >
+          {cta.buttonText}
+        </Link>
+        <p className="mt-6 text-sm text-stone-400">{cta.secondaryText}</p>
+      </div>
     </section>
   );
 };
